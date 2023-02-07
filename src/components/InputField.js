@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class InputField extends Component {
-    render() {
-        return (
+export default function InputField(props) {
+    return (
         <input 
             type="text"
-            id = { this.props.id }
-            className= { this.props.className }
-            placeholder = { this.props.placeholder }
-            onChange = { this.props.onChange }
-         />
-        );
-    }
+            id = { props.id }
+            className= { props.className }
+            placeholder = { props.placeholder }
+            onChange = { props.onChange }
+            />
+    );
 }
